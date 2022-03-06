@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fanyang/cpp/DataBase/include/inputBuffer.hpp
+string
+-
+iostream
+-
+../include/utilty.hpp
+/home/fanyang/cpp/DataBase/include/utilty.hpp
+
+/home/fanyang/cpp/DataBase/include/utilty.hpp
+iostream
+-
+
+/home/fanyang/cpp/DataBase/src/main.cpp
+../include/utilty.hpp
+/home/fanyang/cpp/DataBase/include/utilty.hpp
+../include/inputBuffer.hpp
+/home/fanyang/cpp/DataBase/include/inputBuffer.hpp
+
