@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "../../main.pdb"
   "CMakeFiles/main.dir/inputBuffer.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o"
+  "CMakeFiles/main.dir/statement.cpp.o"
   "CMakeFiles/main.dir/utilty.cpp.o"
 )
 

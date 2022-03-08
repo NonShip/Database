@@ -11,12 +11,14 @@
 
 #include "../include/utilty.hpp"
 #include "../include/inputBuffer.hpp"
+#include "../include/statement.hpp"
 
 int main(int argc, char *argv[]) {
 	InputBuffer inputBuffer;
 	while (true) {
 		printPrompt();
 		inputBuffer.readInput();
+		skipSpcae(inputBuffer.m_buff);
 		if (inputBuffer.m_buff[0] == '.') {
 			switch (inputBuffer.processMetaInput()) {
 				case (CommandResult::COMMAND_SUCCESS):
@@ -26,6 +28,13 @@ int main(int argc, char *argv[]) {
 					continue;
 			}
 
+		}
+		Statement statement;
+		switch (statement.prepareStatment(inputBuffer)) {
+			case (PrepareResult::PREPARE_SUCCESS):
+				break;
+			default:
+				break;
 		}
 	};
 

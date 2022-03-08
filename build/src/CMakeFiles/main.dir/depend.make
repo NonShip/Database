@@ -6,8 +6,14 @@ src/CMakeFiles/main.dir/inputBuffer.cpp.o: ../include/utilty.hpp
 src/CMakeFiles/main.dir/inputBuffer.cpp.o: ../src/inputBuffer.cpp
 
 src/CMakeFiles/main.dir/main.cpp.o: ../include/inputBuffer.hpp
+src/CMakeFiles/main.dir/main.cpp.o: ../include/statement.hpp
 src/CMakeFiles/main.dir/main.cpp.o: ../include/utilty.hpp
 src/CMakeFiles/main.dir/main.cpp.o: ../src/main.cpp
+
+src/CMakeFiles/main.dir/statement.cpp.o: ../include/inputBuffer.hpp
+src/CMakeFiles/main.dir/statement.cpp.o: ../include/statement.hpp
+src/CMakeFiles/main.dir/statement.cpp.o: ../include/utilty.hpp
+src/CMakeFiles/main.dir/statement.cpp.o: ../src/statement.cpp
 
 src/CMakeFiles/main.dir/utilty.cpp.o: ../include/utilty.hpp
 src/CMakeFiles/main.dir/utilty.cpp.o: ../src/utilty.cpp

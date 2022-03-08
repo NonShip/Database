@@ -179,6 +179,33 @@ main.cpp.s:
 	cd /home/fanyang/cpp/DataBase/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+statement.o: statement.cpp.o
+
+.PHONY : statement.o
+
+# target to build an object file
+statement.cpp.o:
+	cd /home/fanyang/cpp/DataBase/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statement.cpp.o
+.PHONY : statement.cpp.o
+
+statement.i: statement.cpp.i
+
+.PHONY : statement.i
+
+# target to preprocess a source file
+statement.cpp.i:
+	cd /home/fanyang/cpp/DataBase/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statement.cpp.i
+.PHONY : statement.cpp.i
+
+statement.s: statement.cpp.s
+
+.PHONY : statement.s
+
+# target to generate assembly for a file
+statement.cpp.s:
+	cd /home/fanyang/cpp/DataBase/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statement.cpp.s
+.PHONY : statement.cpp.s
+
 utilty.o: utilty.cpp.o
 
 .PHONY : utilty.o
@@ -221,6 +248,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... statement.o"
+	@echo "... statement.i"
+	@echo "... statement.s"
 	@echo "... utilty.o"
 	@echo "... utilty.i"
 	@echo "... utilty.s"

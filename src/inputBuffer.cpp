@@ -21,6 +21,9 @@ CommandResult InputBuffer::processMetaInput(void) {
 	} else if (this->m_buff.compare(".btree") == 0) {
 		std::cout << "Tree:\n";
 		return CommandResult::COMMAND_SUCCESS;
+	} else if (this->m_buff.compare(".constants") == 0) {
+		std::cout << "Constants: ";
+		return CommandResult::COMMAND_SUCCESS;
 	}
 	return CommandResult::COMMAND_UNRECOGNIZED;
 }

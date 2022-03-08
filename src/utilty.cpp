@@ -14,3 +14,9 @@
 void printPrompt(void) {
 	std::cout << "db > ";
 }
+
+
+void skipSpcae(std::string &str) {
+	str.erase(0, str.find_first_not_of(' '));
+}
+
